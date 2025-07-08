@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Travel Destinations - South India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+  <nav>
+    <h2>South India Tours</h2>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="contact.html" target="_blank">Contact</a></li>
+
+    </ul>
+  </nav>
+
+
+  
+  <header>
+  <div class="bg-image"></div>
+  <div class="header-content">
+    <h1>Discover South India</h1>
+    <p>Explore the rich culture, nature, and history of South India</p>
+  </div>
+</header>
+
+
+
+  <section class="section" id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="c:\Users\Supervisor\Pictures\Camera Roll\allepy.jpg" alt="Alleppey">
+        <div class="card-content">
+          <h3>Alleppey, Kerala</h3>
+          <p>Experience the serene backwaters, houseboats, and lush greenery that define Kerala's charm.</p>
+          <a href="allepy.html" class="read-more" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c:\Users\Supervisor\Pictures\Camera Roll\hampi.jpg" alt="Hampi">
+        <div class="card-content">
+          <h3>Hampi, Karnataka</h3>
+          <p>Walk through ancient ruins and surreal boulder landscapes in this UNESCO World Heritage site.</p>
+          <a href="hampi.html" class="read-more" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c:\Users\Supervisor\Pictures\Camera Roll\ooty.jpg" alt="Ooty">
+        <div class="card-content">
+          <h3>Ooty, Tamil Nadu</h3>
+          <p>Charming hill station with cool weather, tea plantations, and a scenic toy train ride.</p>
+          <a href="ooty.html" class="read-more" target="_blank">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tips">
+    <h2>Travel Tips</h2>
+    <ul style="max-width: 800px; margin: auto; list-style: disc; padding-left: 20px;">
+      <li>Carry light cotton clothing and sunscreen in coastal areas.</li>
+      <li>Respect temple customs and dress codes in religious places.</li>
+      <li>Use public transport or rent scooters in hill stations.</li>
+      <li>Try local dishes like dosa, idli, and filter coffee!</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center; max-width: 600px; margin: auto;">Have questions or want to recommend a hidden gem in South India? Email us at <strong>travel@southindiatours.com</strong></p>
+     <!-- Add the button here -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="goToContact()" class="button">Contact Page</button>
+      <button onclick="goToAbout()" class="button">About Us</button>
+      <button onclick="goToGallery()" class="button">Gallery</button>
+      <button onclick="goToFeedback()" class="button">Feedback</button>
+  </div>
+  </section>
+
+
+  <footer>
+    🌿 South India Tours &copy; 2025 | Crafted with culture and curiosity ✈
+  </footer>
+   <button id="backToTopBtn" title="Go to top">↑ Top</button>
+
+
+  
+  <!-- JavaScript -->
+  <script>
+    // Show welcome message when page loads
+    alert("Welcome to South India Tours!");
+
+    // Button: Go to Contact Page
+    function goToContact() {
+      window.location.href = "contact.html";
+    }
+
+    // Button: About Us Page
+    function goToAbout() {
+      window.location.href = "about.html";
+    }
+
+    // Button: Gallery Page
+    function goToGallery() {
+      window.location.href = "gallery.html";
+    }
+
+    // Button: Feedback Page
+    function goToFeedback() {
+      window.location.href = "feedback.html";
+    }
+  
+
+
+  
+  
+  // Back to Top Button Logic
+  const topBtn = document.getElementById("backToTopBtn");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+
+  topBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+ 
+
+  
+
+
+
+
+
+  </script>
+
+ 
+    
+
+</body>
+</html>
